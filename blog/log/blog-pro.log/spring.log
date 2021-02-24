@@ -1,0 +1,6 @@
+2021-01-30 16:13:13.907  INFO 26636 --- [restartedMain] com.yst.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_275 on Yst with PID 26636 (D:\JavaProject\blog\target\classes started by lenovo in D:\JavaProject\blog)
+2021-01-30 16:13:13.910  INFO 26636 --- [restartedMain] com.yst.blog.BlogApplication             : The following profiles are active: pro
+2021-01-30 16:13:15.810  WARN 26636 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-01-30 16:13:16.466  WARN 26636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-30 16:13:16.688  WARN 26636 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-01-30 16:13:16.844  INFO 26636 --- [restartedMain] com.yst.blog.BlogApplication             : Started BlogApplication in 3.782 seconds (JVM running for 5.567)

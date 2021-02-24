@@ -1,0 +1,15 @@
+#已经改名了 原后缀.properties
+spring:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+    servlet:
+      content-type: text/html
+  profiles:
+    active: dev
+
+    ##国际化的配置信息放在i18n后，需要重新指定路径才生效
+  messages:
+    basename: i18n/messages
+
+comment.avatar : /images/avatar.png

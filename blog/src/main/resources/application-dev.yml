@@ -1,0 +1,19 @@
+#已经改名了 原后缀.properties 开发环境
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    root: info
+    com.yst: debug
+  #放置日志的位置，与原代码不一样，可能出毛病
+  file:
+    path: log/blog-dev.log
+

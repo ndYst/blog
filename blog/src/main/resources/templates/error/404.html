@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>错误页面</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link href="../../static/css/yst.css" rel="stylesheet"> <!---href.后少了/--->
+</head>
+<body>
+<!-- ---导航---->
+<nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="m-item right item m-mobile-hide">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Searching...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--手机端折叠菜单-->
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<br>
+<br>
+<br>
+<div class="m-container-small m-padded-tb-massive">
+    <div class="ui error message m-padded-tb-huge" >
+        <div class="ui container">
+            <h2>404</h2>
+            <p>对不起，您访问的资源不存在</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!--最底部-->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text spaced m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事（User Story）</a>
+                    <a href="#" class="item">用户故事（User Story）</a>
+                    <a href="#" class="item">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text spaced m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email：1821786585@qq.com</a>
+                    <a href="#" class="item">QQ:1821786585</a>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <h4 class="ui inverted header m-text-thin m-text spaced m-text-thin m-text-spaced ">YangShiTeng</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，我会在这里分享编程，思考，生活等各方面的内容，希望来到这里的朋友有所收获。</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">CopyRight©2020-2021 designed by YangShiTeng</p>
+    </div>
+</footer>
+
+</body>
+</html>
